@@ -73,7 +73,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-teal-50/50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-white to-blue-50/50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">Méthode</h2>
           <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-8 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -93,7 +93,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50 via-teal-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/50 via-blue-50 to-teal-50/50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-12 text-center">
             Déroulé du bilan d'orientation
@@ -127,7 +127,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50 via-teal-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50/50 via-teal-50 to-teal-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">
             Les bénéfices du bilan
@@ -153,7 +153,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50 via-teal-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50 via-teal-50/70 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Tarif</h2>
           <div className="bg-white rounded-xl p-8 inline-block shadow-md mb-8">
