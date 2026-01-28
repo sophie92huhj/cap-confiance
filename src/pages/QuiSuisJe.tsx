@@ -130,24 +130,27 @@ export const QuiSuisJe = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-700 to-teal-800 text-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ma conviction</h2>
-            <p className="text-xl md:text-2xl text-teal-50 leading-relaxed italic">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-teal-800 mb-6">
+            Ma conviction
+          </h2>
+          <div className="bg-white rounded-xl p-8 md:p-12 shadow-md mb-8">
+            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic">
               « L'orientation et la psychopédagogie sont étroitement liées : mieux se connaître,
               c'est aussi mieux comprendre ses aspirations et construire un projet qui nous ressemble. »
             </p>
           </div>
 
-          <div className="mt-12 text-center">
-            <a
-              href="#contact"
-              className="inline-block bg-white text-teal-800 px-8 py-4 rounded-lg hover:bg-teal-50 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
-            >
-              Prenons contact
-            </a>
-          </div>
+          <p className="text-lg text-gray-700 mb-8">
+            Envie d'échanger sur votre situation ?
+          </p>
+          <a
+            href="#contact"
+            className="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
+          >
+            Prenons contact
+          </a>
         </div>
       </section>
     </div>

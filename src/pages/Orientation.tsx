@@ -153,23 +153,24 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-700 to-teal-800 text-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Tarif</h2>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 inline-block">
-            <p className="text-5xl font-bold mb-2">450 €</p>
-            <p className="text-xl text-teal-100">le bilan complet</p>
-            <p className="text-sm text-teal-100 mt-4">Incluant les 4 séances et le compte-rendu détaillé</p>
+          <h2 className="text-3xl font-bold text-teal-800 mb-6">Tarif</h2>
+          <div className="bg-white rounded-xl p-8 inline-block shadow-md mb-8">
+            <p className="text-5xl font-bold text-teal-700 mb-2">450 €</p>
+            <p className="text-xl text-gray-700">le bilan complet</p>
+            <p className="text-sm text-gray-600 mt-4">Incluant les 4 séances et le compte-rendu détaillé</p>
           </div>
 
-          <div className="mt-12">
-            <a
-              href="#contact"
-              className="inline-block bg-white text-teal-800 px-8 py-4 rounded-lg hover:bg-teal-50 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
-            >
-              Prendre rendez-vous
-            </a>
-          </div>
+          <p className="text-lg text-gray-700 mb-8">
+            Prêt à construire votre projet d'orientation ?
+          </p>
+          <a
+            href="#contact"
+            className="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
+          >
+            Prendre rendez-vous
+          </a>
         </div>
       </section>
     </div>

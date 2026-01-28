@@ -8,6 +8,7 @@ export const useNavigation = () => {
     const handleHashChange = () => {
       const hash = window.location.hash.slice(1) as PageId;
       setCurrentPage(hash || 'accueil');
+      window.scrollTo(0, 0);
     };
 
     handleHashChange();

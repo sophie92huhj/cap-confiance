@@ -1,9 +1,22 @@
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { navItems } from '../types/navigation';
+import { PageId } from '../types/navigation';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState<PageId>('accueil');
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) as PageId;
+      setCurrentPage(hash || 'accueil');
+    };
+
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -23,7 +36,9 @@ export const Header = () => {
               <a
                 key={item.id}
                 href={item.path}
-                className="text-gray-700 hover:text-teal-600 transition-colors font-medium"
+                className={`text-gray-700 hover:text-teal-600 transition-colors font-medium pb-1 ${
+                  currentPage === item.id ? 'border-b-2 border-teal-600 text-teal-600' : ''
+                }`}
               >
                 {item.label}
               </a>
@@ -45,7 +60,9 @@ export const Header = () => {
               <a
                 key={item.id}
                 href={item.path}
-                className="block py-2 text-gray-700 hover:text-teal-600 transition-colors font-medium"
+                className={`block py-2 text-gray-700 hover:text-teal-600 transition-colors font-medium ${
+                  currentPage === item.id ? 'text-teal-600 font-bold' : ''
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}

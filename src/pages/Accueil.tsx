@@ -198,15 +198,17 @@ export const Accueil = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-800 text-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Prêt à prendre rendez-vous ?</h2>
-          <p className="text-xl mb-8 text-teal-100">
+          <h2 className="text-3xl font-bold text-teal-800 mb-6">
+            Prêt à prendre rendez-vous ?
+          </h2>
+          <p className="text-lg text-gray-700 mb-8">
             N'hésitez pas à me contacter pour échanger sur vos besoins
           </p>
           <a
             href="#contact"
-            className="inline-block bg-white text-teal-800 px-8 py-4 rounded-lg hover:bg-teal-50 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
+            className="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg hover:bg-teal-700 hover:scale-110 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-2xl"
           >
             Me contacter
           </a>
