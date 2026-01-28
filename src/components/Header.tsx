@@ -24,7 +24,7 @@ export const Header = () => {
         <div className="flex justify-between items-center py-4">
           <a href="#accueil" className="flex items-center gap-3">
             <img
-              src="/design_sans_titre_(1).png"
+              src={`${import.meta.env.BASE_URL}design_sans_titre_(1).png`}
               alt="Cap Confiance Logo"
               className="h-16 w-16 object-contain"
             />
