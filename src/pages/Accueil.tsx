@@ -38,7 +38,7 @@ export const Accueil = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-blue-50/70 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-teal-800 mb-6">
             Psychopédagogie & Orientation scolaire – Cap Confiance

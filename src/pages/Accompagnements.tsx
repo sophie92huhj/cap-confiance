@@ -31,7 +31,7 @@ export const Accompagnements = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-700 via-teal-800 to-white text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-700 to-teal-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Accompagnements & Tarifs</h1>
           <p className="text-xl md:text-2xl text-blue-50 leading-relaxed">

@@ -20,7 +20,7 @@ export const QuiSuisJe = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Qui suis-je ?</h1>
@@ -30,7 +30,7 @@ export const QuiSuisJe = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
             <div className="prose prose-lg max-w-none">
@@ -101,7 +101,7 @@ export const QuiSuisJe = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-white to-blue-50/30">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-12 text-center">Mon parcours</h2>
           <div className="space-y-8">
@@ -130,7 +130,7 @@ export const QuiSuisJe = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/30 via-teal-50/50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">
             Ma conviction
