@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import { Baby, GraduationCap, Brain, Heart, Target, BookOpen, Euro, Lightbulb } from 'lucide-react';
 
+type Category = 'enfants' | 'collegiens';
+
 export const Accompagnements = () => {
+  const [selectedCategory, setSelectedCategory] = useState<Category>('enfants');
+
   const axesTravail = [
     {
       icon: Brain,
@@ -42,7 +47,35 @@ export const Accompagnements = () => {
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          {/* Toggle Switch */}
+          <div className="flex justify-center mb-12">
+            <div className="bg-white rounded-full p-2 shadow-lg inline-flex">
+              <button
+                onClick={() => setSelectedCategory('enfants')}
+                className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
+                  selectedCategory === 'enfants'
+                    ? 'bg-gradient-to-r from-teal-600 to-teal-700 text-white shadow-md'
+                    : 'text-gray-600 hover:text-teal-700'
+                }`}
+              >
+                Enfants
+              </button>
+              <button
+                onClick={() => setSelectedCategory('collegiens')}
+                className={`px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
+                  selectedCategory === 'collegiens'
+                    ? 'bg-gradient-to-r from-teal-600 to-teal-700 text-white shadow-md'
+                    : 'text-gray-600 hover:text-teal-700'
+                }`}
+              >
+                Collégiens / Lycéens / Étudiants
+              </button>
+            </div>
+          </div>
+
+          {/* Enfants Section */}
+          {selectedCategory === 'enfants' && (
+            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 animate-fadeIn">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-full p-4">
                 <Baby className="text-teal-600" size={32} />
@@ -91,9 +124,9 @@ export const Accompagnements = () => {
                 <div className="flex justify-between items-center bg-white rounded-lg p-4">
                   <div>
                     <p className="font-semibold text-gray-800">Bilan psychopédagogique</p>
-                    <p className="text-sm text-gray-600">2 séances d'1h</p>
+                    <p className="text-sm text-gray-600">2 séances d'1h + bilan écrit</p>
                   </div>
-                  <p className="text-2xl font-bold text-teal-700">100 €</p>
+                  <p className="text-2xl font-bold text-teal-700">150 €</p>
                 </div>
                 <div className="flex justify-between items-center bg-white rounded-lg p-4">
                   <div>
@@ -105,8 +138,11 @@ export const Accompagnements = () => {
               </div>
             </div>
           </div>
+          )}
 
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          {/* Collégiens / Lycéens / Étudiants Section */}
+          {selectedCategory === 'collegiens' && (
+          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 animate-fadeIn">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-full p-4">
                 <GraduationCap className="text-teal-600" size={32} />
@@ -163,6 +199,7 @@ export const Accompagnements = () => {
               </div>
             </div>
           </div>
+          )}
         </div>
       </section>
 

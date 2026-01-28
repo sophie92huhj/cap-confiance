@@ -75,25 +75,172 @@ export const Orientation = () => {
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-white to-blue-50/50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">Méthode</h2>
-          <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-8 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Les séances sont personnalisées et utilisent notamment un outil de <strong className="text-teal-700">photo-langage</strong> illustrant
-              des environnements professionnels et des gestes métiers. Cette méthode est particulièrement adaptée
-              aux jeunes ayant des troubles de l'expression écrite.
+          <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">Intéressé(e) par un Bilan d'orientation scolaire ?</h2>
+          
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Vous entendez parler de plus en plus de bilan d'orientation scolaire, mais sans savoir exactement de quoi il s'agit…
             </p>
-            <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-              <FileText className="text-teal-600 flex-shrink-0 mt-1" size={24} />
-              <p className="text-gray-700">
-                Les notes sont prises par la professionnelle tout au long du processus. Un <strong>compte-rendu
-                détaillé</strong> est remis à l'issue du bilan.
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Vous voulez en savoir plus ? Comprendre les tenants et les aboutissements ?
+            </p>
+            <p className="text-lg font-semibold text-teal-700">
+              C'est parti ! Je réponds ci-dessous à toutes les questions que vous vous posez certainement.
+            </p>
+          </div>
+
+          {/* Question 1 */}
+          <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-8 shadow-md mb-8 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl font-bold text-teal-800 mb-4">1) À qui est-il destiné ?</h3>
+            <p className="text-lg text-gray-700 mb-4">
+              Il est destiné aux <strong>collégiens, lycéens, et étudiants en réorientation.</strong>
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              De manière générale, les résultats d'un Bilan d'orientation permettent :
+            </p>
+            <ul className="space-y-3 ml-4">
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                <span className="text-gray-700">
+                  Aux élèves de <strong>troisième</strong> de choisir leur poursuite d'études : lycée général et technologique ou lycée professionnel ou CAP.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                <span className="text-gray-700">
+                  Aux élèves de <strong>seconde</strong> de sélectionner les enseignements de spécialités pour la classe de première, prendre conscience des attendus des filières d'études supérieures.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                <span className="text-gray-700">
+                  Aux élèves de <strong>première</strong> de repérer les filières de formation, d'anticiper sur les attendus des établissements supérieurs, de commencer à se mobiliser sur son dossier.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                <span className="text-gray-700">
+                  Aux élèves de <strong>terminale</strong> d'élaborer et construire des scénarios pragmatiques en tenant compte de leur projet d'études et de leurs réelles capacités scolaires.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                <span className="text-gray-700">
+                  Aux <strong>étudiants en réorientation</strong> de trouver rapidement une autre voie d'études supérieures vraiment adaptée à leur profil d'étudiant et à leur projet professionnel.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Question 2 */}
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-8 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl font-bold text-teal-800 mb-4">2) À quoi sert un Bilan d'orientation ?</h3>
+            <p className="text-lg text-gray-700 mb-4">
+              Si vous vous posez ces questions :
+            </p>
+            <ul className="space-y-2 mb-6 ml-4">
+              <li className="text-gray-700">• J'ai un projet précis mais j'aimerais être sûr(e) qu'il me convienne</li>
+              <li className="text-gray-700">• Je n'ai aucun projet professionnel pour l'avenir et cela m'angoisse</li>
+              <li className="text-gray-700">• Quelles spécialités choisir en fin de seconde si je n'ai pas encore de projet ?</li>
+              <li className="text-gray-700">• Vers quelles études me tourner après le bac ? Quel secteur professionnel pourrait me plaire ? Quels sont les débouchés ?</li>
+              <li className="text-gray-700">• J'ai commencé mes études supérieures mais je me suis trompé(e) dans mon orientation postbac. Puis-je changer de filière universitaire ?</li>
+            </ul>
+            
+            <div className="bg-gradient-to-r from-teal-100 to-blue-100 rounded-lg p-6 mb-6">
+              <p className="text-xl font-bold text-teal-800 text-center">
+                Alors le Bilan d'orientation est fait pour vous !
+              </p>
+            </div>
+
+            <p className="text-lg text-gray-700 mb-4">
+              En 4 séances, vous obtiendrez :
+            </p>
+            <ul className="space-y-2 mb-6 ml-4">
+              <li className="text-gray-700">• un véritable tour d'horizon de votre personnalité</li>
+              <li className="text-gray-700">• et 3 secteurs professionnels spécialement identifiés pour vous.</li>
+            </ul>
+
+            <div className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-lg p-6">
+              <p className="text-lg font-semibold text-teal-800 mb-3">Les bénéfices sont considérables :</p>
+              <ul className="space-y-2 ml-4">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">l'élève reprend confiance en lui,</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">il retrouve du sens aux apprentissages scolaires,</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="text-teal-600 flex-shrink-0 mt-1" size={20} />
+                  <span className="text-gray-700">et il bâtit un projet d'orientation réaliste en fonction de ses objectifs et du marché du travail.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Question 3 */}
+          <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-8 shadow-md mb-8 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl font-bold text-teal-800 mb-4">3) Concrètement, comment ça marche ?</h3>
+            <p className="text-lg text-gray-700 mb-6">
+              Concrètement, le bilan d'orientation se déroule en présentiel ou en visioconférence (sur Zoom) et en 3 étapes :
+            </p>
+            
+            <div className="space-y-4">
+              <div className="bg-white rounded-lg p-5 flex items-start gap-4">
+                <div className="bg-gradient-to-br from-teal-600 to-teal-700 text-white text-xl font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <p className="font-semibold text-teal-800 mb-1">1ère étape</p>
+                  <p className="text-gray-700">Entretien approfondi avec l'élève <strong>(1h30 à 2h)</strong></p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-5 flex items-start gap-4">
+                <div className="bg-gradient-to-br from-teal-600 to-teal-700 text-white text-xl font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <p className="font-semibold text-teal-800 mb-1">2ème étape</p>
+                  <p className="text-gray-700">Quelques jours après, l'élève réalise, en ma compagnie, plusieurs questionnaires <strong>psychométriques</strong> pour cerner l'ensemble de sa personnalité <strong>(1h à 1h30)</strong></p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-5 flex items-start gap-4">
+                <div className="bg-gradient-to-br from-teal-600 to-teal-700 text-white text-xl font-bold rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <p className="font-semibold text-teal-800 mb-1">3ème étape</p>
+                  <p className="text-gray-700">1 à 2 semaines après environ, j'organise une restitution orale des résultats du bilan en présence de l'élève et de ses parents, et j'envoie suite au bilan un dossier récapitulatif complet <strong>(1h30)</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Question 4 */}
+          <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="text-2xl font-bold text-teal-800 mb-4">4) Pourquoi attendre ? Réservez votre place et passez à l'action !</h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Sortez du brouillard, gagnez en motivation et en confiance grâce au bilan d'orientation.
+            </p>
+            <p className="text-lg font-semibold text-teal-700 mb-6">
+              Vous verrez, il y aura un avant et un après.
+            </p>
+            <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-lg p-6">
+              <p className="text-gray-700 mb-4">
+                Si vous souhaitez me rencontrer et échanger avec moi avant de réserver votre séance, c'est tout à fait possible. Sans attendre, prenez RDV pour une séance découverte offerte.
+              </p>
+              <p className="text-gray-700 italic">
+                Nous verrons ensemble comment je peux vous aider, vous guider, vous accompagner dans ce processus de réflexion tellement important pour votre avenir.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/50 via-blue-50 to-teal-50/50">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/50 via-blue-50 to-teal-50/50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-12 text-center">
             Déroulé du bilan d'orientation
@@ -125,7 +272,7 @@ export const Orientation = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50/50 via-teal-50 to-teal-50">
         <div className="max-w-5xl mx-auto">
