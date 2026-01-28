@@ -1,4 +1,4 @@
-import { HelpCircle, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
 export const FAQ = () => {
@@ -32,12 +32,9 @@ export const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-800 text-white">
+    <div className="min-h-screen">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-600 via-teal-700 to-white text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-6">
-            <HelpCircle size={64} />
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Questions Fréquentes</h1>
           <p className="text-xl md:text-2xl text-teal-50 leading-relaxed">
             Vous avez des questions ? Voici les réponses aux interrogations les plus courantes
@@ -45,7 +42,7 @@ export const FAQ = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -84,7 +81,7 @@ export const FAQ = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-teal-50/50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">
             Vous avez d'autres questions ?

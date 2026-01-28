@@ -30,8 +30,8 @@ export const Accompagnements = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-700 to-teal-800 text-white">
+    <div className="min-h-screen">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-700 via-teal-800 to-white text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Accompagnements & Tarifs</h1>
           <p className="text-xl md:text-2xl text-blue-50 leading-relaxed">
@@ -40,7 +40,7 @@ export const Accompagnements = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
             <div className="flex items-center gap-4 mb-6">
@@ -166,7 +166,7 @@ export const Accompagnements = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-teal-50/50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Modalités pratiques</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

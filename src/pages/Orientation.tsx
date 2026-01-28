@@ -29,8 +29,8 @@ export const Orientation = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-800 text-white">
+    <div className="min-h-screen">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-600 via-teal-700 to-white text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Bilan d'Orientation</h1>
           <p className="text-xl md:text-2xl text-teal-50 leading-relaxed">
@@ -39,7 +39,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -73,7 +73,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-white to-blue-50/50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">Méthode</h2>
           <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl p-8 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -93,7 +93,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50/50 via-blue-50 to-teal-50/50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-12 text-center">
             Déroulé du bilan d'orientation
@@ -127,7 +127,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50/50 via-teal-50 to-teal-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">
             Les bénéfices du bilan
@@ -153,7 +153,7 @@ export const Orientation = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-teal-50 via-teal-50/70 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Tarif</h2>
           <div className="bg-white rounded-xl p-8 inline-block shadow-md mb-8">
