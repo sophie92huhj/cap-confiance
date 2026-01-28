@@ -153,7 +153,7 @@ export const Orientation = () => {
             </div>
 
             <p className="text-lg text-gray-700 mb-4">
-              En 4 séances, vous obtiendrez :
+              En 3 séances, vous obtiendrez :
             </p>
             <ul className="space-y-2 mb-6 ml-4">
               <li className="text-gray-700">• un véritable tour d'horizon de votre personnalité</li>
@@ -306,7 +306,7 @@ export const Orientation = () => {
           <div className="bg-white rounded-xl p-8 inline-block shadow-md mb-8">
             <p className="text-5xl font-bold text-teal-700 mb-2">450 €</p>
             <p className="text-xl text-gray-700">le bilan complet</p>
-            <p className="text-sm text-gray-600 mt-4">Incluant les 4 séances et le compte-rendu détaillé</p>
+            <p className="text-sm text-gray-600 mt-4">Incluant les 3 séances et le compte-rendu détaillé</p>
           </div>
 
           <p className="text-lg text-gray-700 mb-8">

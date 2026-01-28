@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Baby, GraduationCap, Brain, Heart, Target, BookOpen, Euro, Lightbulb } from 'lucide-react';
+import { Baby, GraduationCap, Brain, Heart, Target, BookOpen, Euro, Lightbulb, FileText } from 'lucide-react';
 
 type Category = 'enfants' | 'collegiens';
 
@@ -31,6 +31,11 @@ export const Accompagnements = () => {
       icon: Target,
       title: "Estime de soi, motivation et confiance",
       description: "Retrouver le plaisir d'apprendre et croire en ses capacités"
+    },
+    {
+      icon: FileText,
+      title: "Bilan psychopédagogique si besoin",
+      description: "Pour permettre d'orienter la prise en charge de façon efficace"
     }
   ];
 
