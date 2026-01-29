@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Baby, GraduationCap, Brain, Heart, Target, BookOpen, Euro, Lightbulb, FileText } from 'lucide-react';
+import { Baby, GraduationCap, Brain, Heart, Target, BookOpen, Euro, Lightbulb, FileText, Wrench } from 'lucide-react';
 
 type Category = 'enfants' | 'collegiens';
 
@@ -31,6 +31,11 @@ export const Accompagnements = () => {
       icon: Target,
       title: "Estime de soi, motivation et confiance",
       description: "Retrouver le plaisir d'apprendre et croire en ses capacités"
+    },
+    {
+      icon: Wrench,
+      title: "Remédiation",
+      description: "Renforcement des compétences fragiles avec un enseignement explicite et des outils adaptés"
     },
     {
       icon: FileText,
