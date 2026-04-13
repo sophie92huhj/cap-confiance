@@ -24,15 +24,27 @@ export const QuiSuisJe = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Qui suis-je ?</h1>
-          <p className="text-xl md:text-2xl text-teal-50 leading-relaxed">
-            Élodie, psychopédagogue et conseillère en orientation
-          </p>
         </div>
       </section>
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
+              <div className="flex-shrink-0">
+                <img 
+                  src="/cap-confiance/elo.jpeg" 
+                  alt="Élodie, psychopédagogue et conseillère en orientation" 
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg border-4 border-teal-100"
+                />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold text-teal-800 mb-4">Élodie</h2>
+                <p className="text-lg text-gray-600">
+                  Psychopédagogue et conseillère en orientation scolaire
+                </p>
+              </div>
+            </div>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 <strong className="text-teal-700">Enseignante depuis plus de 20 ans</strong>, j'ai développé
