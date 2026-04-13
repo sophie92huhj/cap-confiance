@@ -78,18 +78,20 @@ export const Orientation = () => {
             {/* Q1 */}
             <AnimatedSection animation="fade-up" delay={0} className="bg-white rounded-2xl p-8 shadow-sm border border-stone-100">
               <h3 className="text-xl font-bold text-teal-800 mb-4">1) À qui est-il destiné ?</h3>
-              <p className="text-gray-600 text-sm mb-3">Il est destiné aux <strong className="text-gray-800">collégiens, lycéens, et étudiants en réorientation.</strong></p>
+              <p className="text-gray-600 text-sm mb-3">Il est destiné aux <strong className="text-gray-800">collégiens, lycéens et étudiants en réorientation.</strong></p>
               <ul className="space-y-2.5">
                 {[
-                  { niveau: "3e", texte: "de choisir leur poursuite d'études : lycée général et technologique ou lycée professionnel ou CAP." },
-                  { niveau: "Seconde", texte: "de sélectionner les enseignements de spécialités pour la classe de première." },
-                  { niveau: "Première", texte: "de repérer les filières de formation et d'anticiper sur les attendus des établissements supérieurs." },
-                  { niveau: "Terminale", texte: "d'élaborer des scénarios pragmatiques en tenant compte de leur projet d'études et de leurs capacités scolaires." },
-                  { niveau: "Étudiants en réorientation", texte: "de trouver rapidement une autre voie vraiment adaptée à leur profil." },
+                  { prefix: "Aux élèves de", niveau: "3e", texte: "choisir leur poursuite d'études entre un lycée général et technologique, un lycée professionnel ou un CAP." },
+                  { prefix: "Aux élèves de", niveau: "seconde", texte: "sélectionner les enseignements de spécialité pour la classe de première." },
+                  { prefix: "Aux élèves de", niveau: "première", texte: "repérer les filières de formation et anticiper les attendus des établissements d'enseignement supérieur." },
+                  { prefix: "Aux élèves de", niveau: "terminale", texte: "élaborer des scénarios pragmatiques en tenant compte de leur projet d'études et de leurs capacités scolaires." },
+                  { prefix: "Aux étudiants en", niveau: "réorientation", texte: "trouver rapidement une autre voie réellement adaptée à leur profil." },
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="text-teal-500 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-gray-600 text-sm">Aux élèves de <strong className="text-gray-800">{item.niveau}</strong> {item.texte}</span>
+                    <span className="text-gray-600 text-sm">
+                      {item.prefix} <strong className="text-teal-700">{item.niveau}</strong> : {item.texte}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -122,7 +124,7 @@ export const Orientation = () => {
               <div className="bg-stone-50 rounded-xl p-5">
                 <p className="font-semibold text-gray-800 mb-3 text-sm">Les bénéfices :</p>
                 <ul className="space-y-2">
-                  {["l'élève reprend confiance en lui,", "il retrouve du sens aux apprentissages scolaires,", "et il bâtit un projet d'orientation réaliste."].map((b, i) => (
+                  {["L'élève reprend confiance en lui,", "il retrouve du sens aux apprentissages scolaires,", "et il bâtit un projet d'orientation réaliste."].map((b, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="text-teal-500 flex-shrink-0 mt-0.5" size={16} />
                       <span className="text-gray-600 text-sm">{b}</span>
