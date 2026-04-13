@@ -1,164 +1,177 @@
-import { Mail, Phone, MapPin, Clock, Video } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Video, ArrowRight } from 'lucide-react';
+import { AnimatedSection } from '../components/AnimatedSection';
+import { useInView } from '../hooks/useInView';
 
 export const Contact = () => {
+  const { ref: heroRef, isInView: heroInView } = useInView(0.1);
+
+  const cards = [
+    {
+      icon: Mail, title: "Email", label: "elodie.capconfiance@gmail.com",
+      href: "mailto:elodie.capconfiance@gmail.com",
+    },
+    {
+      icon: Phone, title: "Téléphone", label: "07 45 13 05 51",
+      href: "tel:0745130551",
+    },
+  ];
+
   return (
-    <div className="min-h-screen">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-800 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact</h1>
-          <p className="text-xl md:text-2xl text-teal-50 leading-relaxed">
-            Prenons contact pour échanger sur vos besoins
-          </p>
+    <div className="min-h-screen bg-white">
+
+      <section className="relative overflow-hidden py-20 px-4 sm:px-6 lg:px-8 bg-teal-700 text-white">
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-teal-600 opacity-30 blur-3xl pointer-events-none" />
+        <div
+          ref={heroRef as React.RefObject<HTMLDivElement>}
+          className={`max-w-3xl mx-auto text-center relative transition-all duration-700 ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact</h1>
+          <p className="text-teal-100 text-lg">Prenons contact pour échanger sur vos besoins</p>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-blue-50/30 to-blue-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="space-y-8">
-              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <h2 className="text-2xl font-bold text-teal-800 mb-6">Coordonnées</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-full p-3 flex-shrink-0">
-                      <Mail className="text-teal-600" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                      <a
-                        href="mailto:elodie.capconfiance@gmail.com"
-                        className="text-teal-600 hover:text-teal-700 transition-colors"
-                      >
-                        elodie.capconfiance@gmail.com
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-full p-3 flex-shrink-0">
-                      <Phone className="text-teal-600" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Téléphone</h3>
-                      <a
-                        href="tel:0745130551"
-                        className="text-teal-600 hover:text-teal-700 transition-colors"
-                      >
-                        07 45 13 05 51
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-full p-3 flex-shrink-0">
-                    <MapPin className="text-teal-600" size={24} />
-                  </div>
-                  <div>
-                    <h2 className="text-2xl font-bold text-teal-800 mb-2">Adresse</h2>
-                    <div className="text-gray-700 leading-relaxed">
-                      <p className="font-semibold">Cabinet situé au médipôle de Lançon-Provence</p>
-                      <p className="mt-2">Allée Francisco Caravaca</p>
-                      <p>13680 Lançon-Provence</p>
-                      <p className="mt-2 text-sm text-gray-600">1er étage (à côté du Carrefour Contact)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl shadow-lg p-8 text-white hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-white/20 rounded-full p-3 flex-shrink-0">
-                    <Clock className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h2 className="text-2xl font-bold mb-4">Horaires</h2>
-                    <p className="text-teal-50 mb-4">Sur rendez-vous uniquement</p>
-                    <div className="space-y-2">
-                      <div className="bg-white/10 rounded-lg p-3">
-                        <p className="font-semibold">Au cabinet</p>
-                        <p className="text-teal-50">Mercredi et samedi : 9h – 19h</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl shadow-lg p-8 text-white hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="bg-white/20 rounded-full p-3 flex-shrink-0">
-                    <Video className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h2 className="text-2xl font-bold mb-3">Téléconsultation</h2>
-                    <p className="text-teal-50 leading-relaxed">
-                      Les séances en visioconférence sont possibles, notamment pour les bilans
-                      d'orientation. N'hésitez pas à me contacter pour en discuter.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                <h3 className="text-xl font-bold text-teal-800 mb-4">Comment me contacter ?</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold">•</span>
-                    <span>Par téléphone ou SMS pour une prise de rendez-vous rapide</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold">•</span>
-                    <span>Par email pour toute question ou demande d'information</span>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold">•</span>
-                    <span>Je vous répondrai dans les meilleurs délais</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 via-teal-50/50 to-teal-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-stone-50">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-            <h2 className="text-3xl font-bold text-teal-800 mb-6 text-center">
-              Première prise de contact
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed text-center mb-8">
-              Lors de notre premier échange, nous prendrons le temps de discuter de vos besoins,
-              de vos attentes et de la situation. Cet échange me permettra de vous proposer
-              l'accompagnement le plus adapté à votre profil.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">1</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            {/* Colonne gauche */}
+            <div className="space-y-4">
+              <AnimatedSection animation="fade-left" className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                <h2 className="text-lg font-bold text-teal-800 mb-5">Coordonnées</h2>
+                <div className="space-y-4">
+                  {cards.map((card, i) => {
+                    const Icon = card.icon;
+                    return (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="bg-teal-50 rounded-full p-2.5 flex-shrink-0">
+                          <Icon className="text-teal-600" size={18} />
+                        </div>
+                        <div>
+                          <p className="text-xs text-gray-400 mb-0.5">{card.title}</p>
+                          <a href={card.href} className="text-teal-700 hover:text-teal-800 transition-colors text-sm font-medium hover:underline">
+                            {card.label}
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-                <p className="text-gray-700 font-medium">Contactez-moi</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">2</span>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-left" delay={100} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                <div className="flex items-start gap-3">
+                  <div className="bg-teal-50 rounded-full p-2.5 flex-shrink-0">
+                    <MapPin className="text-teal-600" size={18} />
+                  </div>
+                  <div>
+                    <h2 className="text-lg font-bold text-teal-800 mb-2">Adresse</h2>
+                    <p className="text-sm font-medium text-gray-700">Cabinet situé au médipôle de Lançon-Provence</p>
+                    <p className="text-sm text-gray-500 mt-1">Allée Francisco Caravaca</p>
+                    <p className="text-sm text-gray-500">13680 Lançon-Provence</p>
+                    <p className="text-xs text-gray-400 mt-1">1er étage (à côté du Carrefour Contact)</p>
+                  </div>
                 </div>
-                <p className="text-gray-700 font-medium">Échangeons sur vos besoins</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3 hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-xl">3</span>
+              </AnimatedSection>
+            </div>
+
+            {/* Colonne droite */}
+            <div className="space-y-4">
+              <AnimatedSection animation="fade-right" className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="bg-teal-50 rounded-full p-2.5 flex-shrink-0">
+                    <Clock className="text-teal-600" size={18} />
+                  </div>
+                  <h2 className="text-lg font-bold text-teal-800">Horaires</h2>
                 </div>
-                <p className="text-gray-700 font-medium">Fixons un rendez-vous</p>
-              </div>
+                <p className="text-xs text-gray-400 mb-3">Sur rendez-vous uniquement</p>
+                <div className="bg-stone-50 rounded-xl p-4 hover:bg-teal-50 transition-colors duration-200">
+                  <p className="text-sm font-medium text-gray-700">Au cabinet</p>
+                  <p className="text-sm text-gray-500 mt-1">Mercredi et samedi : 9h – 19h</p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-right" delay={100} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-teal-50 rounded-full p-2.5 flex-shrink-0">
+                    <Video className="text-teal-600" size={18} />
+                  </div>
+                  <h2 className="text-lg font-bold text-teal-800">Téléconsultation</h2>
+                </div>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  Les séances en visioconférence sont possibles, notamment pour les bilans d'orientation. N'hésitez pas à me contacter pour en discuter.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-right" delay={200} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
+                <h3 className="text-base font-bold text-teal-800 mb-3">Comment me contacter ?</h3>
+                <ul className="space-y-2 text-gray-500 text-sm">
+                  {[
+                    "Par téléphone ou SMS pour une prise de rendez-vous rapide",
+                    "Par email pour toute question ou demande d'information",
+                    "Je vous répondrai dans les meilleurs délais",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-teal-500 mt-0.5">•</span><span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AnimatedSection>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Étapes */}
+      <AnimatedSection animation="fade-up" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-teal-800 mb-4">Première prise de contact</h2>
+          <p className="text-gray-500 text-sm leading-relaxed mb-10 max-w-xl mx-auto">
+            Lors de notre premier échange, nous prendrons le temps de discuter de vos besoins, de vos attentes et de la situation.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-12">
+            {[
+              { n: 1, label: "Contactez-moi" },
+              { n: 2, label: "Échangeons sur vos besoins" },
+              { n: 3, label: "Fixons un rendez-vous" },
+            ].map((step, i) => {
+              const { ref, isInView } = useInView(0.1);
+              return (
+                <div
+                  key={step.n}
+                  ref={ref as React.RefObject<HTMLDivElement>}
+                  className={`text-center transition-all duration-500 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+                  style={{ transitionDelay: `${i * 120}ms` }}
+                >
+                  <div className="bg-teal-700 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3 shadow-md">
+                    <span className="text-white font-bold text-sm">{step.n}</span>
+                  </div>
+                  <p className="text-gray-700 font-medium text-sm">{step.label}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* CTA final */}
+      <AnimatedSection animation="fade-up" className="py-16 px-4 sm:px-6 lg:px-8 bg-teal-700 text-white">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4">Prête à vous accompagner</h2>
+          <p className="text-teal-100 text-sm mb-6">Contactez-moi par téléphone, SMS ou email</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="tel:0745130551" className="btn-shimmer inline-flex items-center justify-center gap-2 bg-white text-teal-700 px-6 py-3 rounded-xl hover:bg-stone-50 transition-colors duration-200 font-semibold text-sm shadow-md group">
+              <Phone size={16} />
+              07 45 13 05 51
+            </a>
+            <a href="mailto:elodie.capconfiance@gmail.com" className="btn-shimmer inline-flex items-center justify-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-xl hover:bg-teal-500 transition-colors duration-200 font-semibold text-sm shadow-md border border-teal-500 group">
+              <Mail size={16} />
+              Envoyer un email
+              <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" />
+            </a>
+          </div>
+        </div>
+      </AnimatedSection>
+
     </div>
   );
 };
