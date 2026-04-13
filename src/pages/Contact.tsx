@@ -102,20 +102,6 @@ export const Contact = () => {
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection animation="fade-right" delay={200} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
-                <h3 className="text-base font-bold text-teal-800 mb-3">Comment me contacter ?</h3>
-                <ul className="space-y-2 text-gray-500 text-sm">
-                  {[
-                    "Par téléphone ou SMS pour une prise de rendez-vous rapide",
-                    "Par email pour toute question ou demande d'information",
-                    "Je vous répondrai dans les meilleurs délais",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="text-teal-500 mt-0.5">•</span><span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </AnimatedSection>
             </div>
           </div>
         </div>
