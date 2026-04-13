@@ -133,9 +133,9 @@ export const Psychopedagogie = () => {
                   <div className="flex justify-between items-center bg-white rounded-lg p-4 shadow-sm hover:shadow transition-shadow">
                     <div>
                       <p className="font-medium text-gray-800 text-sm">Bilan psychopédagogique</p>
-                      <p className="text-xs text-gray-500 mt-0.5">2 séances d'1h + bilan écrit</p>
+                      <p className="text-xs text-gray-500 mt-0.5">2 à 3 séances d'une heure + bilan écrit</p>
                     </div>
-                    <p className="text-xl font-bold text-teal-700">150 €</p>
+                    <p className="text-xl font-bold text-teal-700">250 €</p>
                   </div>
                   <div className="flex justify-between items-center bg-white rounded-lg p-4 shadow-sm hover:shadow transition-shadow">
                     <div>
