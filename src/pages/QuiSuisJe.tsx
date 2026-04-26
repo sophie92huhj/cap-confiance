@@ -7,7 +7,7 @@ export const QuiSuisJe = () => {
 
   const parcours = [
     { year: "2025", items: ["Certificat Psychopédagogie et troubles du neurodéveloppement", "Certificat Conseillère en orientation scolaire indépendante (COSI)"] },
-    { year: "2002", items: ["Professeur des écoles diplômée"] },
+    { year: "2002", items: ["Diplôme de professeur des écoles"] },
     { year: "1995", items: ["Licence de sociologie"] },
   ];
 

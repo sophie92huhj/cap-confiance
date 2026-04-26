@@ -118,13 +118,13 @@ export const Orientation = () => {
               </div>
               <p className="text-gray-600 text-sm mb-3">En 3 séances, vous obtiendrez :</p>
               <ul className="space-y-1.5 mb-5 text-gray-500 text-sm">
-                <li className="flex items-start gap-2"><span className="text-teal-400 mt-0.5">•</span><span>un véritable tour d'horizon de votre personnalité</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-400 mt-0.5">•</span><span>3 secteurs professionnels spécialement identifiés pour vous.</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-400 mt-0.5">•</span><span>un véritable tour d'horizon de votre profil (personnalité, compétences, intérêts)</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-400 mt-0.5">•</span><span>des parcours de formation en lien avec des secteurs professionnels spécialement identifiés pour vous.</span></li>
               </ul>
               <div className="bg-stone-50 rounded-xl p-5">
                 <p className="font-semibold text-gray-800 mb-3 text-sm">Les bénéfices :</p>
                 <ul className="space-y-2">
-                  {["L'élève reprend confiance en lui,", "il retrouve du sens aux apprentissages scolaires,", "et il bâtit un projet d'orientation réaliste."].map((b, i) => (
+                  {["L'élève reprend confiance en lui,", "il redonne du sens aux apprentissages scolaires,", "et il bâtit un projet d'orientation réaliste."].map((b, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle className="text-teal-500 flex-shrink-0 mt-0.5" size={16} />
                       <span className="text-gray-600 text-sm">{b}</span>
