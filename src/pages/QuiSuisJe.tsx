@@ -39,7 +39,7 @@ export const QuiSuisJe = () => {
             <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
               <div className="flex-shrink-0">
                 <img
-                  src="/cap-confiance/elo.jpeg"
+                  src="/elo.jpeg"
                   alt="Élodie, psychopédagogue et conseillère en orientation"
                   className="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover shadow-md border-4 border-white"
                 />
